@@ -1,0 +1,48 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'YourSelectedFont', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    color: #0066cc;
+}
+
+/* Style the cards using CSS Grid */
+.card {
+    display: grid;
+    gap: 20px;
+}
+
+.card h3 {
+    color: #009900;
+}
+
+/* Style the course links list */
+.card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Add any additional styles as needed */
