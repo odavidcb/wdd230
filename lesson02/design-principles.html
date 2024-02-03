@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Candia | Lesson 2 Design Principles</title>
+    <meta name="description"
+        content="Week 2 WDD 230 - Web Frontend Development | David Candia course assignment Design Principles for learning activities. ">
+    <meta name="author" content="David Candia">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- <link rel="stylesheet" href="styles/normalize.css"> -->
+    <link rel="stylesheet" href="styles/base.css">    
+    <link rel="stylesheet" href="styles/medium-02.css">
+    <link rel="stylesheet" href="styles/large-02.css">
+</head>
+<body>
+    <header>
+        <h1>Design Principles Document</h1>
+        <h2>David Candia</h2>
+    </header>
+    <main>
+        <section class="card">
+            <h3>Visual Hierarchy</h3>
+            <h4>Marcel Paa Blog</h4>
+            <a href = "https://www.marcelpaa.com/" target="_blank">marcelpaa.com</a>
+            <picture id="pic1">
+                <img src="images/marcel-paa-website.png" alt="Marcel Paa mobile web page for recipes screenshot">
+            </picture>
+            <p>Visual Hierarchy principle on this website page is used to emphasize the hieraschy between each element 
+                thereby making each one stand in order of importance. A critical purpose of visual hierarchy provide a focal point; this indicate
+                to visitor or usser where the most critical information is located, firts images inviting to action
+                next biografy then a world of recipies to the seasson  
+                click on either of the receipe buttons.</p>
+        </section>    
+        <section class="card">
+            <h3>Fitt's Law</h3>
+            <h4>Chase Bank</h4>
+            <a href = "https://www.4life.com/" target="_blank">4life.com</a>
+            <picture id="pic2">
+                <img src="images/4life-website.png" alt="4 life mobile web page screenshot">
+            </picture>
+            <p>The 4 life website utilizes Fitt’s Law by making important elements, such as buttons and links, 
+                larger and placing them within easy reach. This helps minimize the time and effort a user needs to 
+                find what they need on the site.  It’s easy to see where to find an healt suplemment, or learn about other 
+                bank activities as well as login to a user account.</p>
+        </section>
+        <section class="card">
+            <h3>PARC: Repetition</h3>
+            <h4>Thrasher magazine</h4>
+            <a href = "https://www.thrashermagazine.com/" target="_blank">thrashermagazine.com</a>
+            <picture id="pic3">
+                <img src="images/trasher-mag-website.png" alt="OttLite mobile web page screenshot">
+            </picture>
+            <p>The Trasher magasine  website  uses the PARC: Repetition principles.  It has Repetition format to show a buch of videos  
+                also us a go.  This enhances readability and the rest of the page is organized and minimal to find 
+                things easily.</p>
+        </section>
+    </main>
+    <footer>   
+        <p>&#169; <span id="year"></span>| David Candia Tarija | Last Modified <span id="lastModified"></span></p>
+    </footer>
+    <script>
+        const options = {
+        weekday: "long",
+        day: "numeric",
+        month: "long",
+        year: "numeric"
+        };
+
+        let todaysDate =  new Date();
+        let lastModified = new Date(document.lastModified);
+
+        document.querySelector("#year").textContent = todaysDate.getFullYear();
+        document.querySelector('#lastModified').textContent = `Last Modification: ${lastModified.toLocaleDateString("en-UK", options)}`;
+    </script>
+
+</body>
+</html>
