@@ -1,48 +1,260 @@
-/* Reset some default browser styles */
-body, h1, h2, h3, p, ul {
+/* HERE STARTS THE FIRST FACE OF THE CODE */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --heading-font: 'Rubik', sans-serif;
+    --paragraph-font: 'Raleway', sans-serif;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
     margin: 0;
     padding: 0;
 }
 
-body {
-    font-family: 'YourSelectedFont', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-img {
+    width: 100%;
+    height: 150%;
+    max-width: 200%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+#flag {
+    width: 40px;
+    height: auto;
+    margin-bottom: -15px;
+}
+
+h1 {
+    font-size: 2em;
+    margin: auto;
 }
 
 main {
+    margin-top: 20px;
     max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
-}
-
-h2 {
-    color: #0066cc;
-}
-
-/* Style the cards using CSS Grid */
-.card {
     display: grid;
     gap: 20px;
 }
 
-.card h3 {
-    color: #009900;
-}
-
-/* Style the course links list */
-.card ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-/* Footer styling */
+header,
+nav,
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
+    max-width: 100%;
+    margin: 0 auto;
     text-align: center;
 }
 
-/* Add any additional styles as needed */
+header {
+    background-color: #3e4b5b;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: #000;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav a {
+    color: #fff;
+    margin: 10px;
+    font-family: var(--paragraph-font);
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #3e4b5b;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px auto;
+}
+
+footer p {
+    color: #fff;
+    text-align: center;
+}
+
+.card {
+    border-radius: 10px;
+    width: 100%;
+    max-width: 700px;
+    border: 1px solid #3e4b5b;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+    background-color: #3e4b5b;
+    padding: 15px;
+}
+
+.card p {
+    text-align: center;
+}
+
+h2 {
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 0;
+    border-bottom: 2px solid #babcc0;
+}
+
+hr {
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* THIS WOULD BE TO HIDE THE BULLET POINTS FROM THE ACTIVITIES */
+
+.numbered-list {
+    list-style: none;
+    counter-reset: my-counter;
+}
+
+.numbered-list li {
+    counter-increment: my-counter;
+    margin-bottom: 15px;
+}
+
+.numbered-list li:before {
+    content: counter(my-counter, decimal-leading-zero) ": ";
+    color: #333;
+    margin-right: 5px;
+}
+
+/* HERE ENDS THE FIRST FACE OF THE CODE */
+
+/* THIS WOULD BE TO CENTER THE IFRAME */
+
+#map-section {
+    max-width: 700px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#map {
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+}
+
+#map iframe {
+    border: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* RESPONSIVE MENU */
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "x";
+    color: #000;
+}
+
+.navigation {
+    background-color: #000;
+    padding: 0px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation a:hover {
+    background-color: #bbb;
+    color: #000;
+    font-weight: 700;
+}
+
+.open a {
+    display: block;
+}
+
+.active::before {
+    content: "📌";
+}
+
+@media (min-width: 37.5em) {
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+}
