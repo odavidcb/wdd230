@@ -1,0 +1,16 @@
+@media screen and (min-width: 800px) {
+    main {
+      grid-template-columns: 1fr 5fr 5fr 1fr;
+    }
+  
+    main :nth-child(odd) {
+      grid-column: 2/3;
+    }
+    main :nth-child(even) {
+      grid-column: 3/4;
+    }
+  
+  
+  
+  
+  }

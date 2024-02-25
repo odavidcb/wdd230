@@ -1,0 +1,95 @@
+/* https://coolors.co/palette/cb997e-ddbea9-ffe8d6-b7b7a4-a5a58d-6b705c */
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap");
+
+/* font-family: 'Playfair Display', serif;
+font-family: 'Roboto', sans-serif; */
+
+body {
+  margin: auto;
+  background-color: #ffe8d6;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  display: block;
+  background-color:   #b7b7a4;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+header h2 {
+  font-size: 1.5rem;
+}
+
+main {
+  display: grid;
+  margin: auto;
+  max-width: 1600px;
+  padding: 20px;
+  grid-template-columns: 1fr 10fr 1fr;
+}
+main h2 {
+  grid-column: 1/4;
+  text-align: center;
+}
+ul {
+  padding-inline-start: 0%;
+}
+
+section {
+  grid-column: 2/3;
+}
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items: center;
+  background-color: #ddbea9;
+  border-radius: 10px;
+  margin: 10px;
+}
+.card h3 {
+  font-size: 1.5rem;
+  width: 100%;
+  margin: 0;
+  background-color: #b7b7a4;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+  padding: 10px 0 10px 0;
+}
+.card a {
+  box-sizing: border-box;
+  padding: 0 15px 10px 15px;
+  color: black;
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+.card img {
+  width: 95%;
+  height: auto;
+  border-radius: 10px;
+}
+.card p {
+  box-sizing: border-box;
+  font-size: 1.2rem;
+  padding: 15px;
+  margin: 0;
+  text-align: left;
+  width: 100%;
+}
+footer {
+  background-color:   #b7b7a4;
+  color: black;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}

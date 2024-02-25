@@ -1,73 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     <meta charset="UTF-8">
+    <meta name="description" content="WDD230 - Wed Fronted Development, David Candia, course assignment portal">
+    <meta name="author" content="David Candia">
+    <meta name="keywords" content="HTML, CSS, JavaScript, course assignment portal">
+    <meta name="viewport" content="device-width, initial-scale=1.0
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content ="WDD 230 - Web Frontend Development course assignment portal by David Candia.">
-    <meta name ="author" content="David Candia">
-    <meta property="og:title" content="O. David Candia B. - WDD 230 - Web Frontend Development">
-    <title>David Candia - WDD 230 - Web Frontend Development</title> 
 
-  
-    
-   
-    <link rel="stylesheet" href="styles/base.css"> 
-    <link rel="icon" href="favicon.icon">
-   
-    <link rel="icon" href="images/favicon.ico">
-   
+    <meta property="og:title" content="Davi Candia - WDD230 _ Web Fronted Development">
+    <meta property="og:type" content="webside">
+  <!--  <meta property="og:image" content="http://odavidcb.github.io/wdd230/images/city-hall-oxford-street.webp"> -->
+  <!-- <meta property="og:url" content="content=http://odavidcb.github.io/wdd230/">-->  
+
+     <title>David Candia - WDD230 - Web Fronted Development</title>
+     <link rel="stylesheet" href="styles/normalize.css">
+     <link rel="stylesheet" href="styles/base.css">
+     <link rel="stylesheet" href="styles/larger.css">
+     <link rel="stylesheet" href="favicon.ico">
+
 </head>
+          
 <body>
+
     <header>
-        <div class="profile-img"></div><img src="images/profile.jpg" alt="Profile picture" width="120" height="140">
-        <h1>David Candia B.</h1>
+        
+        <img src="image/-----" alt="David Candia Portrait Image" width="1" height="1">
+        <h1>David Candia</h1>
+    </header>
+
         <nav>
 
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
-            <li><a href="chamber/">Chamber</a></li>
-            <li><a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
-            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p6#p6" target="_blank">Scripture</a></li>
-        </ul>
+            <a id="menu" href="#" aria-label="Menu"></a>
+            <ul class="navigation">
+                <li><a  class="nav-link active" href="#">Home</a></li>
+                <li><a class="nav-link" href="lesson03/chamber-site-plan" target="_blank">Site Plan</a></li>
+                <li><a class="nav-link" href="chamber/" target="_blank">Chamber</a></li>
+                <li><a class="nav-link" href="http://www.byu.edu/" target="_blank">BYU-Idaho</a></li> 
+                <li><a class="nav-link"
+                    href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p6#p6" 
+                    target="_blank">Scripture</a></li>
+              <!--  <li> class="nav-link" href="form.html">Sign Up</li>-->
+            </ul>    
         </nav>
-        
-    </header>
-    
-    <main>
-        <h2>"WDD230: Web Fronted Development" </h2>
-        <section class="card"> 
-            <h3>Learning Activities</h3>
-            <ul>
-                <!-- List items and anchors for learning activities will be populated throughout the course -->
-                <li>01:
-                    <a href="lesson01/holygrail.html">Holy Grail Layout</a> | <a href="https://codepen.io/odavidcb">JS Pen</a></li>
-                <!-- Add more items as needed -->
-                <li>02:
-                    <a href="lesson02/design-principles.html">Design Principles</a> |
-                </li>
-                <li>03:</li>
-                <li>04:</li>
-                <li>05:</li>
-                
-            </ul>
 
-        </section>
-    
-        <section class="card">
-            <h3>Information</h3>
-            <!-- Placeholder information about weather, number of visits, etc. -->
-            <p>Tarija, Bolivia</p> 
-            <p>Weather: Sunny</p>
-            <p>Number of Visits: 100</p>
-            <!-- Add more information placeholders as needed -->
-        </section>
+        <main class="home">
+            <div class="hero">
+                <picture>
+                    <source media="(max-with: 400px)" srcset="images/hero-small.webp">
+                    <source media="(max-width: 960px)" srcset="images/hero-medium.webp">
+                    <img src="images/hero-large.webp" alt="Salt Lake City Temple" width="1500" height="750">
+                </picture>
+                <div class="Herolabel">
+                    <p>Salt Lake City Temple</p>
+                </div>
+            </div>
 
+            <h2>WDD230: Web Fronted Development</h2>
+
+            <section class="card">
+                <h3>Learnig Activities</h3>
+                <ul id="links"></ul>
+            </section>
+
+            <section class="card">
+                <h3>Weather</h3>
+                <p>Location: Tarija, Bolivia</p>
+                <p>Current Temperature: <span id="current-temp"></span></p>
+                <p>Humididity: <span id="current-humidity"></span></p>
+                <p>Wind: <span id="current-wind"></span></p>
+
+                <figure>
+                    <img id="wether-icon" src="" alt="50" height="50">
+                    <figcaption id="weather-desc"></figcaption>
+                </figure>
+
+            </section>
+            <iframe title="Google Map" width="1200" height="300"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31155.5959776747!2d27.898928474048382!3d-32.98958977732904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sza!4v1695633037398!5m2!1sen!2sza"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </main>
         
-    </main>
-    <footer> <p>&copy;<span id ="year"></span> <br>O. David Candia B. <br> Tarija </p>
-    <p id="lastModified"></p> </footer>
-    <script src="scripts/getdates.js"> </script>
+        
+        <footer>
+            <p>&copy;<span id="year"></span> | David Candia | Bolivia </p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </footer>
+
+
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/untils.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/links.js"></script>
+
 </body>
+
 </html>

@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Courier Prime", monospace;
+  font-weight: 400;
+}
+
+header h1 {
+  text-align: center;
+  font-weight: 700;
+}
+
+header {
+  border-bottom: 1px solid gray;
+  margin-bottom: 10px;
+  background: linear-gradient(white 60%, grey);
+}
+
+#cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+
+section {
+  margin: 0.25rem;
+  padding: 0.35rem;
+  background: linear-gradient(rgb(172, 156, 192), #aaaaba);
+  /* background-color: rgb(140, 117, 168); */
+  background-image: -moz-radial-gradient();
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid black;
+  box-shadow: 5px 5px 10px black;
+}
+
+section h2 {
+  margin: 0.25rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+section p {
+  margin: 0.25rem;
+}
+
+section img {
+  width: 240px;
+  height: 100%;
+  border: 5px solid rgb(122, 87, 164);
+  margin-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+  font-weight: 700;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  border-top: 1px solid gray;
+  background-color: rgb(177, 161, 197);
+}
